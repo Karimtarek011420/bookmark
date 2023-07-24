@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Mark</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="bg-warning-subtle">
+    <div class="container py-5">
+      <h1 class="text-center position-relative">Bookmarker</h1>
+      <hr class="w-75 mx-auto my-5">
+      <p class="text-center fs-2 text-success"> Bookmark your favorite sites </p>
+      <div class="">
+        <i class="fa-brands fa-instagram"></i>
+        <label for="" class="fw-bold fs-6 my-3"> Site Name:</label>
+        <input type="text" class="form-control md-3  py-2"  id="siteName" placeholder="Bookmarker">
+        <i class="fa-solid fa-location-dot"></i>
+        <label for="" class="fw-bold fs-6 my-3">Site URL:</label>
+        <input type="text" class="form-control md-3 py-2"  id="sitUrl" placeholder="site URL">
+        <button class="btn btn-danger mt-5 d-block  mx-auto px-5" onclick="addurl()" id="addbtn">Sumbit</button>
+      </div>
+    </div>
+    <hr class="w-75 mx-auto my-2">
+
+    <div class="w-75 mx-auto my-5 ">
+      <table class="table text-center">
+        <thead>
+          <th>Index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th class="text-primary">Delete</th>
+        </thead>
+        <tbody id="tbody">
+       
+        </tbody>
+      </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
